@@ -1,0 +1,4 @@
+#!/bin/bash
+pwd
+date +"Time is %H:%M"
+date +"Date is %D"
