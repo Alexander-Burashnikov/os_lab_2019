@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 
-	char *reverted_str = malloc(sizeof(char) * (strlen(argv[1]) + 1));
+	char *reverted_str = (char *)malloc(sizeof(char) * (strlen(argv[1]) + 1));
 	strcpy(reverted_str, argv[1]);
 
 	RevertString(reverted_str);
@@ -21,4 +21,3 @@ int main(int argc, char *argv[])
 	free(reverted_str);
 	return 0;
 }
-
